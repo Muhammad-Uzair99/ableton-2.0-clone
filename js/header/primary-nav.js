@@ -4,7 +4,7 @@ export default function PrimaryNav () {
   const menuBtnEl = document.querySelector("#menu-btn");
 
   menuBtnEl.addEventListener("click", () => {
-    menuBtnArrow();
+    menuBtnArrowToggler();
     textColorToggler();
     svgFillToggler();
     navContentDispalyer();
