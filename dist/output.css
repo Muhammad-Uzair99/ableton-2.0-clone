@@ -594,10 +594,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -616,10 +612,6 @@ video {
 
 .h-2 {
   height: 0.5rem;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .h-7 {
@@ -704,15 +696,6 @@ video {
   overflow-x: scroll;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(5 1 0 / var(--tw-bg-opacity));
@@ -744,11 +727,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -763,6 +741,10 @@ video {
 
 .pt-\[0\.3rem\] {
   padding-top: 0.3rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .font-\[\'Nunito\'\] {
@@ -895,32 +877,16 @@ video {
     display: none;
   }
 
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:w-screen {
-    width: 100vw;
-  }
-
-  .lg\:w-\[90vw\] {
-    width: 90vw;
-  }
-
-  .lg\:w-\[95vw\] {
-    width: 95vw;
-  }
-
-  .lg\:w-\[97vw\] {
-    width: 97vw;
-  }
-
-  .lg\:w-\[99vw\] {
-    width: 99vw;
+  .lg\:h-0 {
+    height: 0px;
   }
 
   .lg\:w-\[98vw\] {
     width: 98vw;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:translate-y-0 {
@@ -936,6 +902,14 @@ video {
     gap: 1.25rem;
   }
 
+  .lg\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
   .lg\:fill-text {
     fill: #FFDFDC;
   }
@@ -944,9 +918,9 @@ video {
     padding: 0px;
   }
 
-  .lg\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .lg\:pl-5 {
@@ -961,6 +935,16 @@ video {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:font-medium {
