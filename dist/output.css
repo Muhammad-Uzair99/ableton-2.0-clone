@@ -546,6 +546,10 @@ video {
   border-width: 0;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -618,6 +622,10 @@ video {
   height: 1.75rem;
 }
 
+.h-\[200vh\] {
+  height: 200vh;
+}
+
 .w-2 {
   width: 0.5rem;
 }
@@ -650,6 +658,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
 }
 
 .flex-col {
@@ -735,16 +747,12 @@ video {
   padding-left: 1rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-\[0\.3rem\] {
   padding-top: 0.3rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .font-\[\'Nunito\'\] {
@@ -801,8 +809,16 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-150 {
+  transition-delay: 150ms;
+}
+
 .delay-300 {
   transition-delay: 300ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .duration-500 {
@@ -877,12 +893,8 @@ video {
     display: none;
   }
 
-  .lg\:h-0 {
-    height: 0px;
-  }
-
-  .lg\:w-\[98vw\] {
-    width: 98vw;
+  .lg\:w-\[97\.25vw\] {
+    width: 97.25vw;
   }
 
   .lg\:w-auto {
@@ -902,12 +914,8 @@ video {
     gap: 1.25rem;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .lg\:overflow-hidden {
-    overflow: hidden;
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:fill-text {
@@ -927,6 +935,10 @@ video {
     padding-left: 1.25rem;
   }
 
+  .lg\:pl-8 {
+    padding-left: 2rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -937,14 +949,22 @@ video {
     line-height: 1.25rem;
   }
 
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .lg\:text-\[1\.1rem\] {
+    font-size: 1.1rem;
+  }
+
+  .lg\:text-\[1\.05rem\] {
+    font-size: 1.05rem;
   }
 
   .lg\:font-medium {
@@ -963,5 +983,29 @@ video {
   .lg\:text-text {
     --tw-text-opacity: 1;
     color: rgb(255 223 220 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }

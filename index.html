@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="text-base text-text">
+<html lang="en" class="text-base lg:text-[1.05rem] xl:text-lg 2xl:text-2xl text-text">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap">
   <script src="./js/index.js" type="module" defer></script>
 </head>
-<body class="bg-background box-border font-['Nunito']">
+<body class="bg-background box-border font-['Nunito'] h-[200vh]">
 
-  <header class="w-full font-[525]">
+  <header id="header" class="w-full font-[525]">
 
     <nav id="primary-nav" aria-label="primary" class="w-full relative flex gap-8 text-xl pb-4 p-5 transition ease-in-out delay-300 duration-500">
 
@@ -40,7 +40,7 @@
           <li class="text-sm leading-7 min-w-[8rem] lg:absolute right-0"><a href="#" target="_blank">Log in or register</a></li>
         </ul>
 
-        <div id="more-nav-content" class="w-full mt-4 lg:mt-6 lg:-ml-28 lg:w-[98vw] lg:pl-5 lg:hidden transition ease-in-out delay-300 duration-500">
+        <div id="more-nav-content" class="w-full mt-4 lg:mt-6 lg:-ml-28 lg:w-[97.25vw] lg:pl-5 lg:hidden transition ease-in-out delay-300 duration-500">
 
           <section class="mb-6 w-full">
             <h2 class="mb-3 lg:text-2xl">More on Ableton.com:</h2>
@@ -50,9 +50,9 @@
               <li class=""><a href="#" target="_blank">Ableton for the Classroom</a></li>
               <li class=""><a href="#" target="_blank">Ableton for Colleges and Universities</a></li>
               <li class=""><a href="#" target="_blank">Certified Training</a></li>
-              <li class="text-text lg:text-primary"><a href="#" target="_blank">About Ableton</a></li>
-              <li class=""><a href="#" target="_blank">Jobs</a></li>
-              <li class=""><a href="#" target="_blank">Apprenticeships</a></li>
+              <li id="primary-about-btn" class="text-text lg:text-primary transition ease-in-out delay-150 duration-500"><a href="#">About Ableton</a></li>
+              <li id="primary-jobs-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Jobs</a></li>
+              <li id="primary-apprenticeships-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Apprenticeships</a></li>
             </ul>
           </section>
 
@@ -95,13 +95,19 @@
 
     <div id="separator" class="w-full h-1 bg-secondary"></div>
 
-    <nav id="secondary-nav" aria-label="secondary" class="py-4 pl-4 lg:py-5 lg:text-xl">
-      <ul class="text-sm flex justify-start items-center gap-3 lg:gap-6">
-        <li class="text-primary">About</li>
-        <li class="">Jobs</li>
-        <li class="">Apprenticeships</li>
+    <nav id="secondary-nav" aria-label="secondary" class="py-4 pl-4 lg:pl-8 lg:py-5 lg:text-xl transition ease-in-out delay-150 duration-300">
+      <ul class="text-sm flex justify-start items-center gap-4 lg:gap-8">
+        <li id="secondary-about-btn" class="text-primary transition ease-in-out delay-150 duration-500"><a href="#">About</a></li>
+        <li id="secondary-jobs-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Jobs</a></li>
+        <li id="secondary-apprenticeships-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Apprenticeships</a></li>
       </ul>
     </nav>
   </header>
+
+  <script>
+    console.log( (document.querySelector("#header").offsetHeight) / parseFloat(window.getComputedStyle(document.documentElement).fontSize));
+
+    console.log( (document.querySelector("#primary-nav").offsetHeight) / parseFloat(window.getComputedStyle(document.documentElement).fontSize));
+  </script>
 </body>
 </html>
