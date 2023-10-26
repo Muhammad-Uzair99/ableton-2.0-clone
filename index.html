@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap">
   <script src="./js/index.js" type="module" defer></script>
 </head>
-<body class="bg-background box-border font-['Nunito'] h-[200vh]">
+<body class="bg-background box-border font-['Nunito']">
 
   <header id="header" class="w-full font-[525]">
 
@@ -59,29 +59,29 @@
           <section class="w-full">
             <h2 class="mb-3 lg:text-2xl">More from Ableton:</h2>
     
-            <ul class="max-lg:pb-4 p-0 overflow-x-scroll md:overflow-auto w-full text-sm flex justify-start items-stretch gap-4">
-              <li class="min-w-[14.5rem] lg:w-auto"><a href="#">
+            <ul class="max-lg:pb-4 p-0 overflow-x-scroll md:overflow-auto w-full text-sm flex justify-start items-stretch max-lg:gap-4 lg:justify-between">
+              <li class="max-lg:min-w-[14.5rem] w-[24%]"><a href="#">
                 <h3 class="mb-1">Loop</h3>
                 <p class="font-medium">
                   Watch Talks, Performances and Features from Ableton's Summit for Music Makers.
                 </p>
               </a></li>
 
-              <li class="min-w-[14.5rem] lg:w-auto"><a href="#">
+              <li class="max-lg:min-w-[14.5rem] w-[24%]"><a href="#">
                 <h3 class="mb-1">Learning Music</h3>
                 <p class="font-medium">
                   Learn the fundamentals of music making right in your browser.
                 </p>
               </a></li>
 
-              <li class="min-w-[14.5rem] lg:w-auto"><a href="#">
+              <li class="max-lg:min-w-[14.5rem] w-[24%]"><a href="#">
                 <h3 class="mb-1">Learning Synths</h3>
                 <p class="font-medium">
                   Get started with synthesis using a web-based synth and accompanying lessons.
                 </p>
               </a></li>
 
-              <li class="min-w-[14.5rem] mr-8 lg:m-0 lg:w-auto"><a href="#">
+              <li class="max-lg:min-w-[14.5rem] max-lg:mr-8 w-[24%]"><a href="#">
                 <h3 class="mb-1">Making Music</h3>
                 <p class="font-medium">
                   Some tips from 74 Creative Strategies for Electronic Producers.
@@ -103,5 +103,7 @@
       </ul>
     </nav>
   </header>
+
+  <main id="page" class="min-h-screen w-screen border border-white"></main>
 </body>
 </html>
