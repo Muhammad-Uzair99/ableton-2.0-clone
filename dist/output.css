@@ -638,16 +638,16 @@ video {
   grid-column: 1 / -1;
 }
 
-.col-start-3 {
-  grid-column-start: 3;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
 
 .col-start-2 {
   grid-column-start: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
 }
 
 .row-span-1 {
@@ -674,14 +674,14 @@ video {
   margin: auto;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mx-\[8\.33333vw\] {
   margin-left: 8.33333vw;
   margin-right: 8.33333vw;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-1 {
@@ -698,6 +698,10 @@ video {
 
 .mb-\[0\.7em\] {
   margin-bottom: 0.7em;
+}
+
+.mb-\[1\.25em\] {
+  margin-bottom: 1.25em;
 }
 
 .mb-\[1em\] {
@@ -804,11 +808,6 @@ video {
   height: 100%;
 }
 
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
 .min-h-\[55vw\] {
   min-height: 55vw;
 }
@@ -904,12 +903,12 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-rows-1 {
@@ -984,15 +983,6 @@ video {
   border-radius: 9999px;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-accent {
   --tw-bg-opacity: 1;
   background-color: rgb(201 64 49 / var(--tw-bg-opacity));
@@ -1017,40 +1007,44 @@ video {
   --tw-bg-opacity: 0.885;
 }
 
-.bg-\[url\(\'\.\/img\/decorative-photo-1a\.webp\'\)\] {
-  background-image: url('./img/decorative-photo-1a.webp');
+.bg-\[url\(\'\.\/img\/about-page\/decorative-photo-1a\.webp\'\)\] {
+  background-image: url('./img/about-page/decorative-photo-1a.webp');
 }
 
-.bg-\[url\(\'\.\/img\/decorative-photo-1b\.webp\'\)\] {
-  background-image: url('./img/decorative-photo-1b.webp');
+.bg-\[url\(\'\.\/img\/about-page\/decorative-photo-1b\.webp\'\)\] {
+  background-image: url('./img/about-page/decorative-photo-1b.webp');
 }
 
-.bg-\[url\(\'\.\/img\/decorative-photo-2a\.webp\'\)\] {
-  background-image: url('./img/decorative-photo-2a.webp');
+.bg-\[url\(\'\.\/img\/about-page\/decorative-photo-2a\.webp\'\)\] {
+  background-image: url('./img/about-page/decorative-photo-2a.webp');
 }
 
-.bg-\[url\(\'\.\/img\/decorative-photo-2b\.webp\'\)\] {
-  background-image: url('./img/decorative-photo-2b.webp');
+.bg-\[url\(\'\.\/img\/about-page\/decorative-photo-2b\.webp\'\)\] {
+  background-image: url('./img/about-page/decorative-photo-2b.webp');
 }
 
-.bg-\[url\(\'\.\/img\/decorative-photo-2c\.webp\'\)\] {
-  background-image: url('./img/decorative-photo-2c.webp');
+.bg-\[url\(\'\.\/img\/about-page\/decorative-photo-2c\.webp\'\)\] {
+  background-image: url('./img/about-page/decorative-photo-2c.webp');
 }
 
-.bg-\[url\(\'\.\/img\/decorative-photo-3a\.webp\'\)\] {
-  background-image: url('./img/decorative-photo-3a.webp');
+.bg-\[url\(\'\.\/img\/about-page\/decorative-photo-3a\.webp\'\)\] {
+  background-image: url('./img/about-page/decorative-photo-3a.webp');
 }
 
-.bg-\[url\(\'\.\/img\/decorative-photo-3b\.webp\'\)\] {
-  background-image: url('./img/decorative-photo-3b.webp');
+.bg-\[url\(\'\.\/img\/about-page\/decorative-photo-3b\.webp\'\)\] {
+  background-image: url('./img/about-page/decorative-photo-3b.webp');
 }
 
-.bg-\[url\(\'\.\/img\/header\.webp\'\)\] {
-  background-image: url('./img/header.webp');
+.bg-\[url\(\'\.\/img\/about-page\/header\.webp\'\)\] {
+  background-image: url('./img/about-page/header.webp');
 }
 
-.bg-\[url\(\'\.\/img\/jobs-photo-a\.webp\'\)\] {
-  background-image: url('./img/jobs-photo-a.webp');
+.bg-\[url\(\'\.\/img\/about-page\/jobs-photo-a\.webp\'\)\] {
+  background-image: url('./img/about-page/jobs-photo-a.webp');
+}
+
+.bg-\[url\(\'\.\/img\/jobs-page\/jobs-header\.webp\'\)\] {
+  background-image: url('./img/jobs-page/jobs-header.webp');
 }
 
 .bg-gradient-to-br {
@@ -1186,6 +1180,14 @@ video {
   letter-spacing: 0.025em;
 }
 
+.tracking-normal {
+  letter-spacing: 0em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
 .text-background {
   --tw-text-opacity: 1;
   color: rgb(5 1 0 / var(--tw-text-opacity));
@@ -1245,6 +1247,46 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.after\:container::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .after\:container::after {
+    content: var(--tw-content);
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .after\:container::after {
+    content: var(--tw-content);
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .after\:container::after {
+    content: var(--tw-content);
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .after\:container::after {
+    content: var(--tw-content);
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .after\:container::after {
+    content: var(--tw-content);
+    max-width: 1536px;
+  }
+}
+
 .after\:content-\[\'\+\'\]::after {
   --tw-content: '+';
   content: var(--tw-content);
@@ -1258,16 +1300,6 @@ video {
 .after\:content-\[\'\>\'\]::after {
   --tw-content: '>';
   content: var(--tw-content);
-}
-
-.hover\:text-primary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(253 89 72 / var(--tw-text-opacity));
-}
-
-.hover\:text-background:hover {
-  --tw-text-opacity: 1;
-  color: rgb(5 1 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-text:hover {
@@ -1391,10 +1423,6 @@ video {
     height: 100%;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
   .lg\:w-\[50vw\] {
     width: 50vw;
   }
@@ -1428,8 +1456,8 @@ video {
     gap: 2rem;
   }
 
-  .lg\:bg-\[url\(\'\.\/img\/jobs-photo-b\.webp\'\)\] {
-    background-image: url('./img/jobs-photo-b.webp');
+  .lg\:bg-\[url\(\'\.\/img\/about-page\/jobs-photo-b\.webp\'\)\] {
+    background-image: url('./img/about-page/jobs-photo-b.webp');
   }
 
   .lg\:fill-text {
