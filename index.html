@@ -104,7 +104,7 @@
     </nav>
   </header>
 
-  <main id="page" class="min-h-screen w-full">
+  <main id="page" class="min-h-screen w-full mb-[8.33333vw]">
     <article id="about-page" class="w-full">
       <header class="
         flex justify-center items-center 
@@ -237,12 +237,17 @@
         </div>
       </section>
 
-      <section id="jobs-teaser" class="m-[8.33333vw] mt-0 flex flex-col justify-center items-center">
-        <img class="w-full aspect-video" src="./dist/img/jobs-photo-a.webp" aria-hidden="true">
-        <div class="aspect-video flex flex-col justify-center items-center">
-          <h2 class="w-full sm:w-[80vw] md:w-[66.66667vw] mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
-            We're really proud of the work we've done so far. But there's so much more to come. If you'd like to be a part of it, please join us.
-          </h2>
+      <section id="jobs-teaser" class="mx-[8.33333vw] mt-0 lg:grid lg:grid-flow-col grid-cols-2 grid-rows-1">
+        <div class="w-full max-lg:aspect-video lg:h-full col-start-1 col-span-1 bg-center bg-no-repeat bg-cover bg-[url('./img/jobs-photo-a.webp')] lg:bg-[url('./img/jobs-photo-b.webp')]" aria-hidden="true"></div>
+        <div class="w-full p-[8.33333vw] mx-auto lg:h-full lg:aspect-auto col-start-2 col-span-1 bg-accent flex justify-center items-center bg-cover">
+          <div>
+            <h2 class="w-full mt-0 mb-[1em] mx-auto font-bold text-lg md:text-xl">
+              We're really proud of the work we've done so far. But there's so much more to come. If you'd like to be a part of it, please join us.
+            </h2>
+            <a href="#" class="block w-full mt-0 mx-auto font-bold text-lg md:text-xl text-secondary hover:text-text focus:text-text active:text-text cursor-pointer after:content-['>']">
+              See latest jobs 
+            </a>
+          </div>
         </div>
       </section>
     </article>
