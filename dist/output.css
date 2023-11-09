@@ -546,10 +546,6 @@ video {
   border-width: 0;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -684,6 +680,11 @@ video {
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -694,6 +695,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-\[0\.7em\] {
@@ -804,10 +809,6 @@ video {
   height: calc(100vh - 7.8125rem);
 }
 
-.h-full {
-  height: 100%;
-}
-
 .min-h-\[55vw\] {
   min-height: 55vw;
 }
@@ -893,10 +894,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.resize {
-  resize: both;
 }
 
 .grid-cols-1 {
@@ -1043,6 +1040,14 @@ video {
   background-image: url('./img/about-page/jobs-photo-a.webp');
 }
 
+.bg-\[url\(\'\.\/img\/apprenticeships-page\/apprenticeships-photo-a\.webp\'\)\] {
+  background-image: url('./img/apprenticeships-page/apprenticeships-photo-a.webp');
+}
+
+.bg-\[url\(\'\.\/img\/apprenticeships-page\/apprenticeships-photo-b\.webp\'\)\] {
+  background-image: url('./img/apprenticeships-page/apprenticeships-photo-b.webp');
+}
+
 .bg-\[url\(\'\.\/img\/jobs-page\/jobs-header\.webp\'\)\] {
   background-image: url('./img/jobs-page/jobs-header.webp');
 }
@@ -1078,12 +1083,12 @@ video {
   background-repeat: no-repeat;
 }
 
-.fill-background {
-  fill: #050100;
-}
-
 .fill-text {
   fill: #FFDFDC;
+}
+
+.fill-background {
+  fill: #050100;
 }
 
 .p-0 {
@@ -1125,6 +1130,11 @@ video {
 
 .font-\[\'Nunito\'\] {
   font-family: 'Nunito';
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-6xl {
@@ -1174,6 +1184,10 @@ video {
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
 }
 
 .tracking-tight {
@@ -1440,6 +1454,11 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-\[1\.05rem\] {

@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="en" class="text-base lg:text-[1.05rem] xl:text-lg 2xl:text-2xl tracking-wide text-text scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
   <link rel="stylesheet" href="./dist/output.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap">
-  <script src="./js/index.js" type="module" defer></script>
+  <script src="./src/js/index.js" type="module" defer></script>
 </head>
+
 <body class="bg-background box-border font-['Nunito']">
 
   <header id="header" class="w-full font-[525]">
 
-    <nav id="primary-nav" aria-label="primary" class="w-full relative flex gap-8 text-xl pb-4 p-5 transition ease-in-out delay-300 duration-500">
+    <nav id="primary-nav" aria-label="primary"
+      class="w-full relative flex gap-8 text-xl pb-4 p-5 transition ease-in-out delay-300 duration-500">
 
-      <a class="max-lg:z-50 h-7" href="https://www.ableton.com/en/" target="_blank">
+      <a class="max-lg:z-50 h-7" href="https://www.ableton.com/en/" target="">
         <h1 class="sr-only">Ableton Homepage</h1>
-        <svg aria-hidden="true" focusable="false" class="fill-text lg:fill-text w-[3.75rem] h-7 transition ease-in-out delay-300 duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 21"><path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path></svg>
+        <svg aria-hidden="true" focusable="false"
+          class="fill-text lg:fill-text w-[3.75rem] h-7 transition ease-in-out delay-300 duration-500"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 21">
+          <path
+            d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z">
+          </path>
+        </svg>
       </a>
 
-      <button id="menu-btn" class="flex justify-start items-center gap-2 lg:hidden max-lg:z-50" aria-expanded="false" aria-haspopup="true" aria-controls="primary-nav-content">
+      <button id="menu-btn"
+        class="flex justify-start items-center gap-2 lg:hidden max-lg:z-50 transition ease-in-out delay-300 duration-500"
+        aria-expanded="false" aria-haspopup="true" aria-controls="primary-nav-content">
 
-        <span class="pt-[0.3rem]">Menu</span> 
-        <svg id="arrow-up-down" xmlns="http://www.w3.org/2000/svg" class="fill-text w-2 h-2 mt-2 transition ease-in-out delay-300 duration-500" viewBox="0 0 24 24"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
-      
+        <span class="pt-[0.3rem]">Menu</span>
+        <svg id="arrow-up-down" xmlns="http://www.w3.org/2000/svg"
+          class="fill-text w-2 h-2 mt-2 transition ease-in-out delay-300 duration-500" viewBox="0 0 24 24">
+          <path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z">
+          </path>
+        </svg>
+
       </button>
 
-      <div id="primary-nav-content" class="absolute lg:relative top-0 left-0 w-full pt-16 pl-4 text-background lg:text-text max-lg:bg-primary -translate-y-full lg:translate-y-0 lg:p-0 transform ease-in-out delay-300 duration-500 max-lg:z-40" aria-hidden="true">
+      <div id="primary-nav-content"
+        class="absolute lg:relative top-0 left-0 w-full pt-16 pl-4 text-background lg:text-text max-lg:bg-primary -translate-y-full lg:translate-y-0 lg:p-0 transform ease-in-out delay-300 duration-500 max-lg:z-40"
+        aria-hidden="true">
         <ul class="relative mt-1 w-full flex flex-col justify-start items-start gap-5 lg:flex-row">
-          <li class=""><a href="#" target="_blank">Live</a></li>
-          <li class=""><a href="#" target="_blank">Push</a></li>
-          <li class=""><a href="#" target="_blank">Note</a></li>
-          <li class=""><a href="#" target="_blank">Link</a></li>
-          <li class=""><a href="#" target="_blank">Shop</a></li>
-          <li class=""><a href="#" target="_blank">Packs</a></li>
-          <li class=""><a href="#" target="_blank">Help</a></li>
-          <li class="max-lg:hidden text-primary"><button id="more-btn" class="after:content-['+'] transition ease-in-out delay-300 duration-500" aria-expanded="false" aria-haspopup="true" aria-controls="more-nav-content">More </button></li>
-          <li class="lg:text-sm lg:leading-7 lg:text-primary min-w-[8rem] lg:absolute right-[9.25rem]"><a href="#" target="_blank">Try Live for free</a></li>
-          <li class="text-sm leading-7 min-w-[8rem] lg:absolute right-0"><a href="#" target="_blank">Log in or register</a></li>
+          <li class=""><a href="#" target="">Live</a></li>
+          <li class=""><a href="#" target="">Push</a></li>
+          <li class=""><a href="#" target="">Note</a></li>
+          <li class=""><a href="#" target="">Link</a></li>
+          <li class=""><a href="#" target="">Shop</a></li>
+          <li class=""><a href="#" target="">Packs</a></li>
+          <li class=""><a href="#" target="">Help</a></li>
+          <li class="max-lg:hidden text-primary"><button id="more-btn"
+              class="after:content-['+'] transition ease-in-out delay-300 duration-500" aria-expanded="false"
+              aria-haspopup="true" aria-controls="more-nav-content">More </button></li>
+          <li class="lg:text-sm lg:leading-7 lg:text-primary min-w-[8rem] lg:absolute right-[9.25rem]"><a href="#"
+              target="">Try Live for free</a></li>
+          <li class="text-sm leading-7 min-w-[8rem] lg:absolute right-0"><a href="#" target="">Log in or
+              register</a></li>
         </ul>
 
-        <div id="more-nav-content" class="w-full mt-4 lg:mt-6 lg:-ml-28 lg:w-[97.25vw] lg:pl-5 lg:hidden transition ease-in-out delay-300 duration-500">
+        <div id="more-nav-content"
+          class="w-full mt-4 lg:mt-6 lg:-ml-28 lg:w-[97.25vw] lg:pl-5 lg:hidden transition ease-in-out delay-300 duration-500">
 
           <section class="mb-6 w-full">
             <h2 class="mb-3 lg:text-2xl">More on Ableton.com:</h2>
-    
+
             <ul class="mb-3 text-sm flex flex-col justify-start items-start gap-3 lg:gap-5 lg:flex-row lg:font-medium">
-              <li class=""><a href="#" target="_blank">Blog</a></li>
-              <li class=""><a href="#" target="_blank">Ableton for the Classroom</a></li>
-              <li class=""><a href="#" target="_blank">Ableton for Colleges and Universities</a></li>
-              <li class=""><a href="#" target="_blank">Certified Training</a></li>
-              <li id="primary-about-btn" class="text-text lg:text-primary transition ease-in-out delay-150 duration-500"><a href="#">About Ableton</a></li>
+              <li class=""><a href="#" target="">Blog</a></li>
+              <li class=""><a href="#" target="">Ableton for the Classroom</a></li>
+              <li class=""><a href="#" target="">Ableton for Colleges and Universities</a></li>
+              <li class=""><a href="#" target="">Certified Training</a></li>
+              <li id="primary-about-btn"
+                class="text-text lg:text-primary transition ease-in-out delay-150 duration-500"><a href="#">About
+                  Ableton</a></li>
               <li id="primary-jobs-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Jobs</a></li>
-              <li id="primary-apprenticeships-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Apprenticeships</a></li>
+              <li id="primary-apprenticeships-btn" class=" transition ease-in-out delay-150 duration-500"><a
+                  href="#">Apprenticeships</a></li>
             </ul>
           </section>
 
           <section class="w-full">
             <h2 class="mb-3 lg:text-2xl">More from Ableton:</h2>
-    
-            <ul class="max-lg:pb-4 p-0 overflow-x-scroll md:overflow-auto w-full text-sm flex justify-start items-stretch max-lg:gap-4 lg:justify-between">
+
+            <ul
+              class="max-lg:pb-4 p-0 overflow-x-scroll md:overflow-auto w-full text-sm flex justify-start items-stretch max-lg:gap-4 lg:justify-between">
               <li class="max-lg:min-w-[14.5rem] w-[24%]"><a href="#">
-                <h3 class="mb-1">Loop</h3>
-                <p class="font-medium">
-                  Watch Talks, Performances and Features from Ableton's Summit for Music Makers.
-                </p>
-              </a></li>
+                  <h3 class="mb-1">Loop</h3>
+                  <p class="font-medium">
+                    Watch Talks, Performances and Features from Ableton's Summit for Music Makers.
+                  </p>
+                </a></li>
 
               <li class="max-lg:min-w-[14.5rem] w-[24%]"><a href="#">
-                <h3 class="mb-1">Learning Music</h3>
-                <p class="font-medium">
-                  Learn the fundamentals of music making right in your browser.
-                </p>
-              </a></li>
+                  <h3 class="mb-1">Learning Music</h3>
+                  <p class="font-medium">
+                    Learn the fundamentals of music making right in your browser.
+                  </p>
+                </a></li>
 
               <li class="max-lg:min-w-[14.5rem] w-[24%]"><a href="#">
-                <h3 class="mb-1">Learning Synths</h3>
-                <p class="font-medium">
-                  Get started with synthesis using a web-based synth and accompanying lessons.
-                </p>
-              </a></li>
+                  <h3 class="mb-1">Learning Synths</h3>
+                  <p class="font-medium">
+                    Get started with synthesis using a web-based synth and accompanying lessons.
+                  </p>
+                </a></li>
 
               <li class="max-lg:min-w-[14.5rem] max-lg:mr-8 w-[24%]"><a href="#">
-                <h3 class="mb-1">Making Music</h3>
-                <p class="font-medium">
-                  Some tips from 74 Creative Strategies for Electronic Producers.
-                </p>
-              </a></li>
+                  <h3 class="mb-1">Making Music</h3>
+                  <p class="font-medium">
+                    Some tips from 74 Creative Strategies for Electronic Producers.
+                  </p>
+                </a></li>
             </ul>
           </section>
         </div>
@@ -95,17 +121,21 @@
 
     <div id="separator" class="w-full h-1 bg-secondary"></div>
 
-    <nav id="secondary-nav" aria-label="secondary" class="z-10 py-4 pl-4 bg-background bg-opacity-[0.885] w-full lg:pl-8 lg:py-5 lg:text-xl transition ease-in-out delay-150 duration-300">
+    <nav id="secondary-nav" aria-label="secondary"
+      class="z-10 py-4 pl-4 bg-background bg-opacity-[0.885] w-full lg:pl-8 lg:py-5 lg:text-xl transition ease-in-out delay-150 duration-300">
       <ul class="text-sm flex justify-start items-center gap-4 lg:gap-8">
-        <li id="secondary-about-btn" class="text-primary transition ease-in-out delay-150 duration-500"><a href="#about-page">About</a></li>
-        <li id="secondary-jobs-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Jobs</a></li>
-        <li id="secondary-apprenticeships-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#">Apprenticeships</a></li>
+        <li id="secondary-about-btn" class="text-primary transition ease-in-out delay-150 duration-500"><a
+            href="#about-page">About</a></li>
+        <li id="secondary-jobs-btn" class=" transition ease-in-out delay-150 duration-500"><a href="#jobs-page">Jobs</a>
+        </li>
+        <li id="secondary-apprenticeships-btn" class=" transition ease-in-out delay-150 duration-500"><a
+            href="#">Apprenticeships</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="page" class="min-h-screen w-full mb-[8.33333vw]">
-    <article id="about-page" class="w-full hidden">
+  <main id="page" class="min-h-screen w-full mb-[8.33333vw] relative">
+    <article id="about-page" class="w-full transition ease-in-out delay-300 duration-500 ">
       <header class="
         flex justify-center items-center 
         h-[calc(100vh-7.8125rem)] lg:h-[calc(100vh-8.273809523809524rem)] 
@@ -118,31 +148,41 @@
       <section class="m-[8.33333vw] mt-0 ">
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
           <h2 class="mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
-            We make <a class="text-primary" href="#">Live</a>, <a class="text-primary" href="#">Push</a> and <a class="text-primary" href="#">Link</a> — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.
+            We make <a class="text-primary" href="#">Live</a>, <a class="text-primary" href="#">Push</a> and <a
+              class="text-primary" href="#">Link</a> — unique software and hardware for music creation and performance.
+            With these products, our community of users creates amazing things.
           </h2>
           <p class="font-light">
-            Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community of dedicated musicians, sound designers, and artists from across the world.
+            Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a
+            community of dedicated musicians, sound designers, and artists from across the world.
           </p>
         </div>
       </section>
 
-      <div id="decorative-imgs-1" class="w-full min-h-[55vw] mb-[8.33333vw] relative overflow-hidden" aria-hidden="true">
+      <div id="decorative-imgs-1" class="w-full min-h-[55vw] mb-[8.33333vw] relative overflow-hidden"
+        aria-hidden="true">
         <div class="absolute w-[60vw] h-[55vw] top-0 left-[42vw] bg-accent -z-50"></div>
-        <div class="absolute w-[41.66667vw] top-[6.666665vw] h-[41.66667vw] ml-[8.33333vw] -z-10 bg-cover bg-center bg-no-repeat bg-[url('./img/about-page/decorative-photo-1a.webp')]"></div>
-        <div class="absolute w-[30vw] h-[22vw] top-[15.666665vw] left-[58.33333vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-1b.webp')]"></div>
+        <div
+          class="absolute w-[41.66667vw] top-[6.666665vw] h-[41.66667vw] ml-[8.33333vw] -z-10 bg-cover bg-center bg-no-repeat bg-[url('./img/about-page/decorative-photo-1a.webp')]">
+        </div>
+        <div
+          class="absolute w-[30vw] h-[22vw] top-[15.666665vw] left-[58.33333vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-1b.webp')]">
+        </div>
       </div>
 
       <section class="m-[8.33333vw] mt-0 relative">
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
           <h2 class="mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
-            Making music isn't easy. It takes time, effort, and learning. But when you're in the flow, it's incredibly rewarding.
+            Making music isn't easy. It takes time, effort, and learning. But when you're in the flow, it's incredibly
+            rewarding.
           </h2>
           <p class="font-light">
-            We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.
+            We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what
+            we make, and the people we make it for.
           </p>
         </div>
       </section>
-    
+
       <section id="video-section" class="m-[8.33333vw] mt-0 relative grid grid-rows-1 grid-cols-1">
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
 
@@ -152,14 +192,25 @@
 
           <figure class="w-full relative m-auto aspect-video row-span-1 col-span-1">
 
-            <button id="video-play-btn" class="-z-30 w-full m-auto aspect-video cursor-pointer grid grid-rows-5 grid-cols-5">
-              <img class="-z-30 w-full row-span-full col-span-full aspect-video" src="./dist/img/about-page/poster-juanpe.webp" alt="Juanpe Bolivar">
-              <div class="-z-20 w-3/4 m-auto row-start-3 row-span-1 col-start-3 col-span-1 aspect-square bg-accent rounded-full flex justify-center items-center">
-                <svg id="arrow-up-down" xmlns="http://www.w3.org/2000/svg" class="-z-20 fill-text w-2/5 h-2/5 -rotate-90 transition ease-in-out delay-300 duration-500" viewBox="0 0 24 24"><path class="-z-20" d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+            <button id="video-play-btn"
+              class="-z-30 w-full m-auto aspect-video cursor-pointer grid grid-rows-5 grid-cols-5">
+              <img class="-z-30 w-full row-span-full col-span-full aspect-video"
+                src="./dist/img/about-page/poster-juanpe.webp" alt="Juanpe Bolivar">
+              <div
+                class="-z-20 w-3/4 m-auto row-start-3 row-span-1 col-start-3 col-span-1 aspect-square bg-accent rounded-full flex justify-center items-center">
+                <svg id="arrow-up-down" xmlns="http://www.w3.org/2000/svg"
+                  class="-z-20 fill-text w-2/5 h-2/5 -rotate-90 transition ease-in-out delay-300 duration-500"
+                  viewBox="0 0 24 24">
+                  <path class="-z-20"
+                    d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z">
+                  </path>
+                </svg>
               </div>
             </button>
 
-            <div id="youtube-video-container" class="hidden row-span-1 col-span-1 w-full aspect-video bg-gradient-to-br from-secondary via-accent to-primary"></div>
+            <div id="youtube-video-container"
+              class="hidden row-span-1 col-span-1 w-full aspect-video bg-gradient-to-br from-secondary via-accent to-primary">
+            </div>
 
             <figcaption class="text-sm font-bold mt-[0.5em] col-span-1 row-start-2 row-span-1">
               <p>Why Ableton - Juanpe Bolivar</p>
@@ -172,36 +223,53 @@
       <section class="m-[8.33333vw] mt-0 relative">
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
           <h2 class="mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
-            We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.
+            We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our
+            offices in Los Angeles and Tokyo.
           </h2>
           <p class="font-light">
-            Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.
+            Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come
+            from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and
+            most of us are somewhere in between. What connects us is the shared belief that each of us has the skills
+            and knowledge to contribute to something big: helping to shape the future of music culture.
           </p>
         </div>
       </section>
 
-      <div id="decorative-imgs-2" class="w-full min-h-[71vw] mb-[8.33333vw] relative overflow-hidden" aria-hidden="true">
+      <div id="decorative-imgs-2" class="w-full min-h-[71vw] mb-[8.33333vw] relative overflow-hidden"
+        aria-hidden="true">
         <div class="absolute w-[60vw] h-[71vw] top-0 right-[42vw] bg-primary -z-50"></div>
-        <div class="absolute right-[58.33333vw] h-[71vw] flex flex-col justify-center items-center gap-[8.33333333333vw]">
-          <div class="w-[32vw] h-[25vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-2a.webp')]"></div>
-          <div class="w-[32vw] h-[25vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-2b.webp')]"></div>
+        <div
+          class="absolute right-[58.33333vw] h-[71vw] flex flex-col justify-center items-center gap-[8.33333333333vw]">
+          <div
+            class="w-[32vw] h-[25vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-2a.webp')]">
+          </div>
+          <div
+            class="w-[32vw] h-[25vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-2b.webp')]">
+          </div>
         </div>
-        <div class="absolute w-[41.66667vw] h-[41.66667vw] top-[14.666665vw] right-[8.33333vw] -z-10 bg-cover bg-center bg-no-repeat bg-[url('./img/about-page/decorative-photo-2c.webp')]"></div>
+        <div
+          class="absolute w-[41.66667vw] h-[41.66667vw] top-[14.666665vw] right-[8.33333vw] -z-10 bg-cover bg-center bg-no-repeat bg-[url('./img/about-page/decorative-photo-2c.webp')]">
+        </div>
       </div>
 
       <section class="m-[8.33333vw] mt-0 relative">
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
           <h2 class="mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
-            We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive to make them great.
+            We believe it takes focus to create truly outstanding instruments. We only work on a few products and we
+            strive to make them great.
           </h2>
           <p class="font-light">
-            Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We've learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don't always agree with each other, but opinion and debate are valued and openly encouraged.
+            Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic
+            and grow. We've learned that achieving the best results comes from building teams that are richly diverse,
+            and thus able to explore problems from a wider set of perspectives. We don't always agree with each other,
+            but opinion and debate are valued and openly encouraged.
           </p>
         </div>
       </section>
 
       <div id="decorative-poster" class="m-[8.33333vw] mt-0" aria-hidden="true">
-        <img class="w-full shadow-md shadow-secondary" src="./dist/img/about-page/decorative-poster.webp" alt="decorative poster">
+        <img class="w-full shadow-md shadow-secondary" src="./dist/img/about-page/decorative-poster.webp"
+          alt="decorative poster">
       </div>
 
       <section class="m-[8.33333vw] mt-0 relative">
@@ -210,94 +278,176 @@
             We're passionate about what we do, but we're equally passionate about improving who we are.
           </h2>
           <p class="font-light mb-[1em]">
-            We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.
+            We work hard to foster an environment where people can grow both personally and professionally, and we
+            strive to create a wealth of opportunities to learn from and with each other.
           </p>
           <p class="font-light">
-            Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.
+            Alongside an internal training program, employees are actively supported in acquiring new knowledge and
+            skills, and coached on applying these in their daily work. In addition, staff-organized development and
+            music salons are a chance to discuss new technologies, production techniques and best practices.
           </p>
         </div>
       </section>
 
-      <div id="decorative-imgs-3" class="w-full min-h-[71vw] mb-[8.33333vw] relative overflow-hidden" aria-hidden="true">
+      <div id="decorative-imgs-3" class="w-full min-h-[71vw] mb-[8.33333vw] relative overflow-hidden"
+        aria-hidden="true">
         <div class="absolute w-[71vw] h-[71vw] top-0 right-[14.5vw] bg-secondary -z-50"></div>
         <div class="absolute right-[58.33333vw] h-[71vw] flex flex-col justify-center items-center">
-          <div class="w-[32vw] h-[25vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-3a.webp')]"></div>
+          <div
+            class="w-[32vw] h-[25vw] -z-10 bg-center bg-cover bg-no-repeat bg-[url('./img/about-page/decorative-photo-3a.webp')]">
+          </div>
         </div>
-        <div class="absolute w-[41.66667vw] h-[41.66667vw] top-[14.666665vw] right-0 -z-10 bg-cover bg-center bg-no-repeat bg-[url('./img/about-page/decorative-photo-3b.webp')]"></div>
+        <div
+          class="absolute w-[41.66667vw] h-[41.66667vw] top-[14.666665vw] right-0 -z-10 bg-cover bg-center bg-no-repeat bg-[url('./img/about-page/decorative-photo-3b.webp')]">
+        </div>
       </div>
 
       <section class="m-[8.33333vw] mt-0 relative">
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
           <h2 class="mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
-            We want our employees to love it here. Since we're looking for exceptional talent from around the world, we will do everything we can to make your transition as easy as possible.
+            We want our employees to love it here. Since we're looking for exceptional talent from around the world, we
+            will do everything we can to make your transition as easy as possible.
           </h2>
           <p class="font-light">
-            If you're joining us in Berlin, we'll help with relocation and paperwork. We'll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it's not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.
+            If you're joining us in Berlin, we'll help with relocation and paperwork. We'll even provide you with free
+            German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for
+            you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it's
+            not all work; we have several company and team outings throughout the year as well as a variety of fun,
+            informal small-group activities.
           </p>
         </div>
       </section>
 
       <section id="jobs-teaser" class="mx-[8.33333vw] mt-0 lg:grid lg:grid-flow-col grid-cols-2 grid-rows-1">
-        <div class="w-full max-lg:aspect-video lg:h-full col-start-1 col-span-1 bg-center bg-no-repeat bg-cover bg-[url('./img/about-page/jobs-photo-a.webp')] lg:bg-[url('./img/about-page/jobs-photo-b.webp')]" aria-hidden="true"></div>
-        <div class="w-full p-[8.33333vw] mx-auto lg:h-full lg:aspect-auto col-start-2 col-span-1 bg-accent flex justify-center items-center bg-cover">
+        <div
+          class="w-full max-lg:aspect-video lg:h-full col-start-1 col-span-1 bg-center bg-no-repeat bg-cover bg-[url('./img/about-page/jobs-photo-a.webp')] lg:bg-[url('./img/about-page/jobs-photo-b.webp')]"
+          aria-hidden="true"></div>
+        <div
+          class="w-full p-[8.33333vw] mx-auto lg:h-full lg:aspect-auto col-start-2 col-span-1 bg-accent flex justify-center items-center bg-cover">
           <div>
             <h2 class="w-full mt-0 mb-[1em] mx-auto font-bold text-lg md:text-xl">
-              We're really proud of the work we've done so far. But there's so much more to come. If you'd like to be a part of it, please join us.
+              We're really proud of the work we've done so far. But there's so much more to come. If you'd like to be a
+              part of it, please join us.
             </h2>
-            <a href="#" class="block w-full mt-0 mx-auto font-bold text-lg md:text-xl text-secondary hover:text-text focus:text-text active:text-text cursor-pointer after:content-['>']">
-              See latest jobs 
+            <a href="#"
+              class="block w-full mt-0 mx-auto font-bold text-lg md:text-xl text-secondary hover:text-text focus:text-text active:text-text cursor-pointer after:content-['>']">
+              See latest jobs
             </a>
           </div>
         </div>
       </section>
     </article>
 
-    <article id="about-page" class="w-full">
+    <article id="jobs-page" class="w-full transition ease-in-out delay-300 duration-500">
       <header class="
         flex justify-center items-center 
         h-[calc(100vh-7.8125rem)] lg:h-[calc(100vh-8.273809523809524rem)] 
         m-[8.33333vw] mt-0 bg-center bg-no-repeat bg-cover  
         bg-[url('./img/jobs-page/jobs-header.webp')] 
         ">
-        <h1 class="text-center text-primary font-extrabold text-6xl md:text-[6rem] lg:text-[6.75rem]">Jobs at Ableton</h1>
+        <h1 class="text-center text-primary font-extrabold text-6xl md:text-[6rem] lg:text-[6.75rem]">Jobs at Ableton
+        </h1>
       </header>
 
       <section class="m-[8.33333vw] mt-0">
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
           <h2 class="mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
-            Working at Ableton means being a part of creating products that shape the future of music culture in a dynamic and diverse environment
+            Working at Ableton means being a part of creating products that shape the future of music culture in a
+            dynamic and diverse environment
           </h2>
           <p class="font-light mb-[1em]">
-            Here at Ableton, we come from a wide range of cultural and professional backgrounds. We work hard to foster an environment in which people can grow both personally and professionally. We believe that diverse groups of people make better teams. We’re committed to increasing diversity in our workplace and providing equal opportunity throughout our recruitment process. Because of this we ask that you do not include a picture in your application documents. Thank you very much for your understanding.
+            Here at Ableton, we come from a wide range of cultural and professional backgrounds. We work hard to foster
+            an environment in which people can grow both personally and professionally. We believe that diverse groups
+            of people make better teams. We’re committed to increasing diversity in our workplace and providing equal
+            opportunity throughout our recruitment process. Because of this we ask that you do not include a picture in
+            your application documents. Thank you very much for your understanding.
           </p>
           <p class="font-light">
-            If you want to apply for one of our open positions, we would be happy to receive your application through our application form. Please upload all necessary documents there.
+            If you want to apply for one of our open positions, we would be happy to receive your application through
+            our application form. Please upload all necessary documents there.
           </p>
         </div>
       </section>
 
-      <section class="m-[8.33333vw] mt-0">
+      <section class="mx-[8.33333vw] my-0">
 
         <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] text-lg mx-auto">
           <h2 class="mt-0 mb-[1.25em] mx-auto font-bold">Commerce</h2>
 
           <ul class="tracking-tight">
             <li class="mt-0 mb-[1.25em] mx-auto">
-              <a class="after:content-['>'] block text-primary cursor-pointer">EMEA Tax Expert (d/f/m) </a>
-              Ableton AG / Germany
+              <a class="cursor-pointer">
+                <span class="block text-primary after:content-['>']">EMEA Tax Expert (d/f/m) </span>
+                Ableton AG / Germany
+              </a>
             </li>
             <li class="mt-0 mb-[1.25em] mx-auto">
-              <a class="after:content-['>'] block text-primary cursor-pointer">People Operations Specialist (d/f/m) </a>
-              Ableton AG / Germany
+              <a class="cursor-pointer">
+                <span class="block text-primary after:content-['>']">People Operations Specialist (d/f/m) </span>
+                Ableton AG / Germany
+              </a>
             </li>
-            <li class="mt-0 mb-[1.25em] mx-auto">
-              <a class="after:content-['>'] block text-primary cursor-pointer">Referendar:in für die Wahlstation bzw. als Teil der Anwaltsstation (d/w/m) </a>
-              Ableton AG / Germany
+            <li class="mt-0 mx-auto">
+              <a class="cursor-pointer">
+                <span class="block text-primary after:content-['>']">Referendar:in für die Wahlstation bzw. als Teil der
+                  Anwaltsstation (d/w/m) </span>
+                Ableton AG / Germany
+              </a>
             </li>
           </ul>
         </div>
-        
+
       </section>
+    </article>
+
+    <article id="apprenticeships-page" class="w-full transition transform ease-in-out delay-300 duration-500">
+
+
+      <section class="m-[8.33333vw] mb-8 tracking-normal">
+        <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
+          <h1 class="font-extrabold mb-[0.7em] text-4xl lg:text-4xl">Apprenticeships at Ableton</h1>
+          <h2 class="mt-0 mb-[0.7em] mx-auto font-bold text-xl md:text-2xl">
+            What are they and what do you need to get started?
+          </h2>
+          <p class="font-light">
+            Dual apprenticeship programs have a long tradition in Germany, and they play an important role in the
+            country's economy. The programs are a proven stepping stone towards a meaningful career without the need for
+            a university degree. They give you the chance to apply theoretical knowledge learned in a vocational school
+            to tasks in the workplace, while you divide your time between class and office days.
+          </p>
+        </div>
+      </section>
+
+      <div id="decorative-img-1" class="mx-[8.33333vw] mb-8" aria-hidden="true">
+        <div
+          class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto my-0 aspect-video bg-center bg-cover bg-no-repeat bg-[url('./img/apprenticeships-page/apprenticeships-photo-a.webp')]">
+        </div>
+      </div>
+
+      <section class="mx-[8.33333vw] mb-8 tracking-normal">
+        <div class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto">
+          <p class="font-light mb-[0.7em]">
+            At Ableton, you'll work towards the Office Management Assistant apprenticeship over two and a half years,
+            developing your professional and personal skills in different teams. We look for people who are highly
+            motivated to work in a commercial office environment, with an excellent level of German and very good
+            English. It’s important that you’re eager to learn, organized in your work, and communicative when
+            collaborating with others. Plus, you should be ready to get the most out of your development through giving
+            and receiving feedback. You can expect a relaxed, professional atmosphere with a dynamic team of people who
+            love music in return.
+          </p>
+          <p class="font-light">
+            If this sounds like you, feel free to have a look at our detailed information in German <a
+              class="text-primary" href="#">here</a>. And please share this page with anyone who might be interested to
+            help us find our future colleagues!
+          </p>
+        </div>
+      </section>
+
+      <div id="decorative-img-2" class="mx-[8.33333vw] mb-8" aria-hidden="true">
+        <div
+          class="w-full sm:w-[80vw] md:w-[66.66667vw] lg:w-[50vw] mx-auto my-0 aspect-video bg-center bg-cover bg-no-repeat bg-[url('./img/apprenticeships-page/apprenticeships-photo-b.webp')]">
+        </div>
+      </div>
     </article>
   </main>
 
@@ -306,4 +456,5 @@
     console.log(document.querySelector("#header").offsetHeight / rootFontSize);
   </script>
 </body>
+
 </html>
